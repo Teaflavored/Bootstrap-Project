@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#nav_links">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="<%= home_url %>" class="navbar-brand">HyperSkrillex</a>
+    </div>
+    
+    <% unless logged_in? %>
+    <div class="collapse navbar-collapse" id="nav_links">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation"><a href="<%= about_url %>">About</a></li>
+        <li role="presentation"><a href="<%= contact_url %>">Contact Us</a></li>
+        <li role="presentation"><a href="<%= new_user_url %>">Sign Up</a></li>
+        <li role="presentation"><a href="<%= new_session_url %>">Sign In</a></li>
+      </ul>
+    </div>
+    <% end %>
+    
+  </div>
+</nav>
