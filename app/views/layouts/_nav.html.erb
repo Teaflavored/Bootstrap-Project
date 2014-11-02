@@ -12,16 +12,19 @@
       <a href="<%= home_url %>" class="navbar-brand">HyperSkrillex</a>
     </div>
     
-    <% unless logged_in? %>
     <div class="collapse navbar-collapse" id="nav_links">
       <ul class="nav nav-pills" role="tablist">
         <li role="presentation"><a href="<%= about_url %>">About</a></li>
         <li role="presentation"><a href="<%= contact_url %>">Contact Us</a></li>
-        <li role="presentation"><a href="<%= new_user_url %>">Sign Up</a></li>
-        <li role="presentation"><a href="<%= new_session_url %>">Sign In</a></li>
+        <% if logged_in? %>
+          <li role="presentation">
+            <%= button_to "Sign Out", session_url, method: :delete %>
+          </li>
+        <% else %>
+          <li role="presentation"><a href="<%= new_user_url %>">Sign Up</a></li>
+          <li role="presentation"><a href="<%= new_session_url %>">Sign In</a></li>
+        <% end %>
       </ul>
     </div>
-    <% end %>
-    
   </div>
 </nav>

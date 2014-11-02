@@ -24,4 +24,6 @@ class ApplicationController < ActionController::Base
   def log_out!
     self.session[:session_token] = nil
   end
+  
+
 end
