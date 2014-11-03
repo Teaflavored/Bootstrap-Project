@@ -29,7 +29,7 @@
           </li>
           
           <li role="presentation" class="sign_in">
-            <form action="http://localhost:3000/session" class="button_to" method="post">
+            <form action="<%= session_url %>" class="button_to" method="post">
               <div>
                 <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
                 <input name="_method" type="hidden" value="delete">
