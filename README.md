@@ -3,7 +3,7 @@ Project to demonstrate some Bootstrap CSS features
 
 **To view the site**
 
-[Click Here](http://hyperskrillex.herokuapp.com/home)
+**[Click Here](http://hyperskrillex.herokuapp.com/home)
 
 ####Navbar
 -[Navbar](http://getbootstrap.com/components/#navbar)
