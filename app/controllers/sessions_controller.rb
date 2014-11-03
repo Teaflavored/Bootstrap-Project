@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
 
     if @user.nil?
       # no user with the given name!
-      render :new
+      flash[:errors] = ["Invalid Credentials"]
+      redirect_to root_url
     else
       # sign the user in
       log_in!(@user)
@@ -19,7 +20,7 @@ class SessionsController < ApplicationController
   def destroy
     # sign a user out
     log_out!
-    redirect_to new_session_url
+    redirect_to root_url
   end
 
   def new
