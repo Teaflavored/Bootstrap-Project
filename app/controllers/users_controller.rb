@@ -8,6 +8,7 @@ class UsersController < ApplicationController
       redirect_to user_url
     else
       # input didn't pass validation; re-render sign up form.
+      flash.now[:errors] = @user.errors.full_messages
       render :new
     end
   end
@@ -22,7 +23,7 @@ class UsersController < ApplicationController
     # show the user's details (just their username)
     if current_user.nil?
       # let them log in
-      redirect_to new_session_url
+      redirect_to root_url
       return
     end
 

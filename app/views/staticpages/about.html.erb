@@ -1,1 +1,40 @@
-<h1>About</h1>
+<div class="jumbotron" style="height:310px;">
+  <h1 style="font-size:100px;">About</h1>
+  <p><%= Faker::Hacker.say_something_smart %></p>
+  <p><a class="btn btn-primary btn-lg" href="<%= new_user_url %>" role="button">Learn more</a></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">Meet the Team</h1>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="img_box">
+          <%= image_tag("ashe2.png", class: "img-circle")%>
+        </div>
+        <h3 class="text-center">Ashelia B'nargin Dalmasca</h3>
+        <p>
+          Ashelia B'nargin Dalmasca, otherwise known as Ashe and by the alias Amalia, is a playable character in Final Fantasy XII and Final Fantasy XII: Revenant Wings. She is the former Princess of Dalmasca and the only daughter of King Raminas. She is the last true descendant of King Raithwall, the Dynast King. She also appears in the manga version of Final Fantasy XII that delves more into her background than the games do.
+        </p>
+      </div>
+      <div class="col-xs-4">
+        <div class="img_box">
+          <%= image_tag("lightning2.png", class: "img-circle lightning_img")%>
+        </div>
+        <h3 class="text-center">Claire Farron</h3>
+        <p>
+          Lightning, her original name being Claire Farron (Eclair Farron in the Japanese version), is the main protagonist of Final Fantasy XIII. She is the narrator and a temporary playable character in Final Fantasy XIII-2, and returns as the protagonist and sole permanently playable character in Lightning Returns: Final Fantasy XIII.
+        </p>
+      </div>
+      <div class="col-xs-4">
+        <div class="img_box">
+          <%= image_tag("seraph2.png", class: "img-circle lightning_img")%>
+        </div>
+        <h3 class="text-center">Seraph</h3>
+        <p>
+          Seraph is an Esper who only appears in Final Fantasy VI. She is a healing Esper, appearing as a female angel with long brown hair, white feathered wings, and a flowing purple dress rising up towards a beam of light. Her Magicite (the remains of an Esper) could be purchased from a thief in the woods by the Inn in the town of Tzen in the World of Balance for 3000 Gil or in the World of Ruin for 10 gil.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

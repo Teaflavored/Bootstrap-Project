@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-AuthDemo::Application.load_tasks
+HyperSkrillex::Application.load_tasks

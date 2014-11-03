@@ -28,7 +28,7 @@
             </ul>
           </li>
           
-          <li role="presentation">
+          <li role="presentation" class="sign_in">
             <form action="http://localhost:3000/session" class="button_to" method="post">
               <div>
                 <input name="_method" type="hidden" value="delete">
@@ -41,7 +41,7 @@
           
         <% else %>
           <li role="presentation"><a href="<%= new_user_url %>">Sign Up</a></li>
-          <li role="presentation">
+          <li role="presentation" class="sign_in">
             
             <button type="button"
                     class="btn btn-primary"

@@ -17,3 +17,43 @@ bootstrap
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.carousel{
+  width:1024px;
+  height:640px;
+}
+  
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-right{
+  margin-top:10px;
+}
+
+li.sign_in{
+  margin-top:3px;
+}
+
+.ff_img3{
+  width:1024px;
+  height:auto;
+}
+
+div.img_box{
+  margin-left:auto;
+  margin-right:auto;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+}
+
+img.lightning_img{
+  width:200px;
+  height:auto;
+}
+
+div.sign_up_row{
+  margin-top:100px;
+}
